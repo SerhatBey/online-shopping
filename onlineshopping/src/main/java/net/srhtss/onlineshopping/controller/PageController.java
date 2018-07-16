@@ -7,12 +7,34 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class PageController {
 	
-	@RequestMapping(value = {"/", "/home", "/index"})
+	@RequestMapping(value = {"/", "/anasayfa", "/index"})
 	public ModelAndView index() {
 		
 		ModelAndView mv =new ModelAndView("page");
-		mv.addObject("SELAM","Merhaba Spring Web MVC");
+		mv.addObject("title","Anasayfa");
+		mv.addObject("userClickAnasayfa",true);
 		return mv;
 		
 	}
+	 
+	@RequestMapping(value = "/hakkimizda")
+	public ModelAndView about() {
+		
+		ModelAndView mv =new ModelAndView("page");
+		mv.addObject("title","Hakkýmýzda");
+		mv.addObject("userClickAbout",true);
+		return mv;
+		
+	}
+ 
+	@RequestMapping(value = "/iletisim")
+	public ModelAndView iletisim() {
+		
+		ModelAndView mv =new ModelAndView("page");
+		mv.addObject("title","Ýletiþim");
+		mv.addObject("userClickiletisim",true);
+		return mv;		
+	}
+	
+
 }
