@@ -33,14 +33,10 @@
 
 				<li class="nav-item"><a class="nav-link" id="üstMenü"
 					href="${contextRoot}/tüm_ürünler">Tüm Ürünler</a></li>
-				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Günün
-						Fırsatları</a></li>
-				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Kampanyalar</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Yardım</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" id="üstMenü"
-					href="${contextRoot}/iletisim">Bize Sorun</a></li>
+				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Günün Fırsatları</a></li>
+				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Kampanyalar</a></li>
+				<li class="nav-item"><a class="nav-link" id="üstMenü" href="#">Yardım</a></li>
+				<li class="nav-item"><a class="nav-link" id="üstMenü" href="${contextRoot}/iletisim">Bize Sorun</a></li>
 
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -97,7 +93,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">Hesabım</a></li>
 							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="${contextRoot}/show/all/products">Satıştaki Ürünlerim</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Çıkış yap</a></li>
 						</ul></li>
@@ -122,7 +118,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body" style="background-color: #E5AF25">
 				<!-- /////////////////////////////////// -->
 				<form id="signup" method="post" action="/signup">
 					<h1>GİRİŞ</h1>
@@ -158,7 +154,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body" style="background-color: #E5AF25">
 				<!-- /////////////////////////////////// -->
 				<form id="signup" method="post" action="/signup">
 					<h1>ÜYE OL</h1>

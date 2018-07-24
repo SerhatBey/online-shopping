@@ -8,12 +8,7 @@
 
 		<div class="col-lg-3">
 
-			<h1 class="my-4">Ürünler</h1>
-			<div class="list-group">
-				<a href="#" class="list-group-item">Bilgisayarlar</a> <a href="#"
-					class="list-group-item">Telefonlar</a> <a href="#"
-					class="list-group-item">Elektronik</a>
-			</div>
+		<%@include file="./shared/sidebar.jsp" %>
 
 		</div>
 		<!-- /.col-lg-3 -->
@@ -21,7 +16,7 @@
 		<div class="col-lg-9">
 
 			<div id="carouselExampleIndicators" class="carousel slide my-4"
-				data-ride="carousel">
+				data-ride="carousel" style="border-color: black; border-width: 2px; border-style: solid;">
 				<ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0"
 						class="active"></li>

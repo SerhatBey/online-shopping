@@ -64,6 +64,12 @@
 			<c:if test="${userClickiletisim == true}">
 				<%@include file="iletisim.jsp"%>
 			</c:if>
+			
+			<!-- Tıklandığında Liste bölümümü yüklensin. -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 
 		</div>
 
@@ -72,7 +78,7 @@
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.min.js"></script>
-		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script> 
 		<script src="${js}/bootstrap.min.js"></script>
 
 	</div>
