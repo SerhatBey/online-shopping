@@ -7,16 +7,15 @@
 	<div class="row">
 
 		<div class="col-lg-3">
-
-		<%@include file="./shared/sidebar.jsp" %>
-
+			<%@include file="./shared/sidebar.jsp"%>
 		</div>
-		<!-- /.col-lg-3 -->
+		<!-- sidebar çekmek -->
 
 		<div class="col-lg-9">
 
 			<div id="carouselExampleIndicators" class="carousel slide my-4"
-				data-ride="carousel" style="border-color: black; border-width: 2px; border-style: solid;">
+				data-ride="carousel"
+				style="border-color: black; border-width: 2px; border-style: solid;">
 				<ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0"
 						class="active"></li>

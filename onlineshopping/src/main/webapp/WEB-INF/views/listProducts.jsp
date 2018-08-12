@@ -15,11 +15,10 @@
 	<div class="row">
 		
 
-		<!-- Kenar çubuğunu görüntülemek olurdu. -->
+		<!-- Kenar çubuğunu görüntülemek. -->
 		<div class="col-md-15">
 			</br>
 			<%@include file="./shared/sidebar.jsp"%>
-
 		</div>		
 
 	</div>

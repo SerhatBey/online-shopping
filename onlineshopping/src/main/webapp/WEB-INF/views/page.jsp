@@ -27,9 +27,8 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap sketchy theme CSS -->
+	<!-- Bootstrap sketchy theme CSS -->
 <link href="${css}/bootstrap-sketchy-theme.css" rel="stylesheet">
-
 <link rel="stylesheet" href="${css}/style.css">
 <link rel="stylesheet" href="${css}/src.css">
 <link rel="stylesheet" href="${css}/acount.css">
@@ -64,12 +63,13 @@
 			<c:if test="${userClickiletisim == true}">
 				<%@include file="iletisim.jsp"%>
 			</c:if>
-			
+
 			<!-- Tıklandığında Liste bölümümü yüklensin. -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
-			
+
 
 		</div>
 
@@ -78,7 +78,7 @@
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.min.js"></script>
-		<script src="${js}/bootstrap.bundle.min.js"></script> 
+		<script src="${js}/bootstrap.bundle.min.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
 
 	</div>

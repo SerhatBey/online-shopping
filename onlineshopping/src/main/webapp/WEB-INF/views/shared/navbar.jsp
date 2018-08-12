@@ -141,7 +141,6 @@
 <!-- **************************************************** -->
 
 <!-- ****************New User Modal********************** -->
-
 <div class="modal fade" id="exampleModalLong2" tabindex="-1"
 	role="dialog" aria-labelledby="exampleModalLongTitle"
 	aria-hidden="true">

@@ -4,7 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.srhtss</groupId>
 	<artifactId>onlineshopping</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>onlineshopping Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -27,7 +26,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -71,4 +70,5 @@
 
 		<finalName>onlineshopping</finalName>
 	</build>
+	<packaging>war</packaging>
 </project>
