@@ -21,20 +21,27 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
+
 <title>Online Market - ${title}</title>
 
+<script>
+	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}'
+	
+</script>
 
 <!-- Bootstrap core CSS -->
+
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Bootstrap sketchy theme CSS -->
+	<!-- dataTable jquery -->
+<link href="${css}/jquery.dataTables.css" rel="stylesheet">
+
 <link href="${css}/bootstrap-sketchy-theme.css" rel="stylesheet">
 <link rel="stylesheet" href="${css}/style.css">
 <link rel="stylesheet" href="${css}/src.css">
 <link rel="stylesheet" href="${css}/acount.css">
 
-
-	<!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 </head>
 
@@ -46,7 +53,6 @@
 		<%@include file="./shared/navbar.jsp"%>
 
 		<!-- Page Content -->
-
 		<div class="content">
 
 			<!-- Home content içerik yükleme -->
@@ -54,22 +60,26 @@
 				<%@include file="home.jsp"%>
 			</c:if>
 
-			<!-- Tıklandığında Hakkinda bölümümü yüklensin. -->
+			<!-- Tıklandığında Hakkinda bölümü yüklensin. -->
 			<c:if test="${userClickAbout == true}">
 				<%@include file="hakkinda.jsp"%>
 			</c:if>
 
-			<!-- Tıklandığında İletişim bölümümü yüklensin. -->
+			<!-- Tıklandığında İletişim bölümü yüklensin. -->
 			<c:if test="${userClickiletisim == true}">
 				<%@include file="iletisim.jsp"%>
 			</c:if>
 
-			<!-- Tıklandığında Liste bölümümü yüklensin. -->
+			<!-- Tıklandığında Liste bölümü yüklensin. -->
 			<c:if
 				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listProducts.jsp"%>
+			</c:if>		
+			
+			<!-- Tıklandığında Ürün Detayları bölümüyüklensin. -->
+			<c:if test="${userClickShowProduct == true}">
+				<%@include file="singleProduct.jsp"%>
 			</c:if>
-
 
 		</div>
 
@@ -78,8 +88,16 @@
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.min.js"></script>
-		<script src="${js}/bootstrap.bundle.min.js"></script>
+		
 		<script src="${js}/bootstrap.min.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+		
+		<!-- DataTable -->
+		<script src="${js}/jquery.dataTables.min.js"></script>	
+
+
+		<!-- BENİMO -->
+		<script src="${js}/myapp.js"></script>
 
 	</div>
 </body>
